@@ -301,15 +301,7 @@ Para poder revisar tu caso de manera rápida y efectiva, por favor envíanos los
 
  *Importante* ‼⬇
 
-❤️‍🔥 Un retiro por día 
-
-💥 *MAXIMO DE RETIRO DEPENDIENDO DE LA CARGA* ⬇️⬇️
-
-❤️‍🔥Si la carga es menor a 50.000 puede retirar hasta 100.000 diarias 💪🏼
-
-❤️‍🔥Si la carga a partir de 50.000 puede retirar hasta 250.000 🫰🏼
-
-❤️‍🔥Si la carga es a partir de 100.000 puede retirar hasta 300.000 diarios 🙌🏻
+❤️‍🔥 Limite de retiro diario hasta $100.000
 `;
     copyToClipboard(texto);
   });
@@ -459,16 +451,16 @@ Para poder revisar tu caso de manera rápida y efectiva, por favor envíanos los
     e.preventDefault(); // Evita el comportamiento por defecto del formulario
     overlayBienvenida.style.display = "none"; // Cerrar el overlay del segundo menú
     const user = document.getElementById("usuarioBienvenida").value.trim();
-    const texto = `¡Bienvenid@ al nuevo BOOM �❤️‍🔥Explosión de diversión ❤️‍🔥
+    const texto = `¡Bienvenid@ al nuevo ALPHABOOM ❤️‍🔥Explosión de diversión ❤️‍🔥
 
 🤯 *300% de b0n0 de regalo en tu primer deposito* 🤯
 
 📲 Usu4rio: ${user}
-🔐 Cl4ve: vip123
+🔐 Cl4ve: boom123
 
 L1NK: https://b22m.net
 
-❤️‍🔥M1n1mo de c4rg4: *$1.500*
+❤️‍🔥M1n1mo de c4rg4: *$3.000*
 ❤️‍🔥M1n1m0 de retiro: *$3.000*
 ❤️‍🔥PAGOS las 24 hs 🕒
 ❤️‍🔥B0nus en todas tus c4rgas diarias 
@@ -490,7 +482,7 @@ Te envio 4li4s? confirmame ❣️
 L1NK: https://b22m.net 🎰
 
 📲 Usu4rio: ${user}
-🔐 Cl4ve: vip123
+🔐 Cl4ve: boom123
 
 Te envio 4li4s? confirmame ❣️
 `;
