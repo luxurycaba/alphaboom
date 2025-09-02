@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAD - ALPHA BOOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Botón Menú Hamburguesa -->
+    <div class="modal-hamburguesa" id="modal-hamburguesa-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="container">
+      <button class="btn-container no-select" id="btn-saludo">SALUDO</button>
+      <button class="btn-container no-select" id="btn-titular">TITULAR</button>
+      <button class="btn-container no-select" id="btn-alias">ALIAS</button>
+      <button class="btn-container no-select" id="btn-cbu">CBU</button>
+      <button class="btn-container no-select" id="btn-bienvenida">
+        BIENVENIDA
+      </button>
+      <button class="btn-container no-select" id="btn-registrarUsuario">
+        REGISTRAR USUARIO
+      </button>
+      <button class="btn-container no-select" id="btn-acreditadas">
+        ACREDITADAS
+      </button>
+      <button class="btn-container no-select" id="btn-link">LINK</button>    
+      <button class="btn-container no-select" id="btn-captura">CAPTURA</button>
+      <button class="btn-container no-select" id="btn-bono">BONO</button>
+      <button class="btn-container no-select" id="btn-solicitarUsuario">
+        SOLICITAR USUARIO
+      </button>
+      <button class="btn-container no-select" id="btn-sistemaDePagos">
+        SISTEMA DE PAGOS
+      </button>      
+      <button class="btn-container no-select" id="btn-referidoAcreditado">
+        REFERIDO ACREDITADO
+      </button>
+      <button class="btn-container no-select" id="btn-referidasAcreditadas">
+        REFERIDAS ACREDITADAS
+      </button>      
+      <button class="btn-container no-select" id="btn-sistemaDeReferidos">
+        SISTEMA DE REFERIDOS
+      </button>
+      <button class="btn-container no-select" id="btn-cartera">
+        CARTERA
+      </button>
+      <button class="btn-container no-select" id="btn-linea">
+        DERIVAR#1
+      </button>
+      <button class="btn-container no-select" id="btn-noIngreso">
+        NO INGRESO
+      </button>
+      <button class="btn-container no-select" id="btn-soporte">SOPORTE</button>
+    </div>
+
+    <!-- Overlay 1 -->
+    <div class="overlay" id="overlay">
+      <!-- Formulario de menu hamburguesa -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Ingresar datos:</h2>
+          <label for="titular">TITULAR:</label>
+          <input type="text" id="titular" name="titular" required />
+          <label for="cbu">CBU:</label>
+          <input type="text" id="cbu" name="cbu" required />
+          <label for="alias">ALIAS:</label>
+          <input type="text" id="alias" name="alias" required />
+          <button type="submit">Cargar Datos</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Overlay 2 -->
+    <div class="overlay-btn" id="overlay-bienvenida">
+      <!-- Formulario de bienvenida -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Ingresar usuario:</h2>
+          <input
+            type="text"
+            id="usuarioBienvenida"
+            name="usuarioBienvenida"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Overlay 3 -->
+    <div class="overlay-btn" id="overlay-registrar">
+      <!-- Formulario de registrar -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Ingresar usuario:</h2>
+          <input
+            type="text"
+            id="usuarioRegistrar"
+            name="usuarioRegistrar"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Overlay 4 -->
+    <div class="overlay-btn" id="overlay-referidoAcreditado">
+      <!-- Formulario de Referido Acreditado -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Usuario que refiere:</h2>
+          <input
+            type="text"
+            id="usuarioQueRefiere"
+            name="usuarioQueRefiere"
+            required
+          />
+          <h2>Usuario referido:</h2>
+          <input
+            type="text"
+            id="usuarioReferido"
+            name="usuarioReferido"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+

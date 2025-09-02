@@ -1,0 +1,188 @@
+/* Reseteo de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Contenedor de la barra de menú hamburguesa */
+.modal-hamburguesa {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Barras del menú hamburguesa */
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e7e7e7;
+  border-radius: 2px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que el fondo se desplace */
+}
+
+/* Overlay2 */
+.overlay-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el formulario */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Ajusta el tamaño del formulario */
+  max-width: 400px; /* Controla el tamaño máximo del formulario */
+  max-height: 90vh; /* Limita la altura del formulario para que no se salga de la pantalla */
+  overflow-y: auto; /* Permite el desplazamiento si es necesario */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox (barra transparente) */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Input Number - Remove arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* CONTENEDOR DE BOTONES */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.311);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* BOTONES */
+.btn-container {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.btn-container:hover {
+  cursor: pointer;
+  background-color: rgba(212, 212, 212, 0.696);
+}
+
+.btn-container:active {
+  background-color: rgba(197, 43, 43, 0.91);
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Estándar */
+}
+
+@media (max-height: 450px) {
+  form label {
+    font-size: 0.6rem;
+    margin: 0.1rem;
+  }
+
+  form input {
+    padding: 0.3rem;
+    margin-bottom: 0.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  form button {
+    padding: 0.1rem;
+    margin-top: 0.4rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  form h2 {
+    font-size: 0.9rem;
+  }
+  .form-container {
+    width: 100%; /* El formulario ocupará el 100% de la pantalla */
+    max-height: 100vh; /* Aseguramos que el formulario no se salga de la pantalla */
+  }
+}
